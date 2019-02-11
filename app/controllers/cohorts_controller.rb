@@ -1,5 +1,5 @@
 class CohortsController < ApplicationController
-  
+  before_action :authenticate_admin!
   def index
     @cohorts = Cohort.all
     @teachers = Teacher.all

@@ -14,18 +14,19 @@
 
 <div id="nav">
 <div id="logo">
-
+<h2>NY Code U</h2>
 </div>
 
 <div id="icon">
 <div><img src="https://i.gifer.com/embedded/download/8T8H.gif"></div>
-<p>Name</p>
+
 <div id="dropdown">
 <i class="far fa-caret-square-down"></i>
  <div id="drop-content">
- <p>Logout</p>
+ <p><%= link_to "Log Out", destroy_admin_session_path, method: :delete %></p>
  </div>
 </div>
+
 </div>
 </div>
 
@@ -43,6 +44,7 @@
 <a href="/teachers"><div>Teachers<i class="fas fa-caret-square-right"></i></div></a>
 <a href="/cohorts"><div>Cohort<i class="fas fa-caret-square-right"></i></div></a>
 <a href="/courses"><div>Courses<i class="fas fa-caret-square-right"></i></div></a>
+<%= link_to "Log Out", destroy_admin_session_path, method: :delete %>
 </div>
 
 </div>

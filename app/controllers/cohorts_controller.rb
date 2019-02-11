@@ -8,6 +8,8 @@ class CohortsController < ApplicationController
 
   def show
     @cohort = Cohort.find(params[:id])
+    @teachers = Teacher.all
+    @students = Student.all
   end
 
   def new
@@ -26,6 +28,13 @@ class CohortsController < ApplicationController
     @cohort = Cohort.find(params[:id])
     @cohort.update(cohort_params)
   end
+
+  def destroy
+    @cohort = Cohort.find(params[:id])
+    @cohort.destroy
+
+    redirect_to :controller => 'cohorts', :action => 'index'
+end
 
 end
 

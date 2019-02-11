@@ -31,6 +31,11 @@ class StudentsController < ApplicationController
     @student.update(student_params)
   end
 
+  def destroy
+    @student = Student.find(params[:id])
+    @student.destroy
+end
+
 end
 
 private

@@ -1,3 +1,5 @@
+<div id="display-inner">
+
 <%= form_with model: @teacher do |form| %>
   <%= form.text_field :first_name, placeholder:"first name" %>
   <%= form.text_field :last_name, placeholder:"last name" %>
@@ -7,3 +9,5 @@
   <%= form.text_field :email, placeholder:"email" %>
   <%= form.text_field :phone_number, placeholder:"phone number" %>
   <%= form.submit %>
+
+  </div>

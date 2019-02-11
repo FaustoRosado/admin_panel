@@ -15,6 +15,7 @@ class StudentsController < ApplicationController
   
   def new
     @student = Student.new
+    @cohorts = Cohort.all
   end
 
   
@@ -26,6 +27,7 @@ class StudentsController < ApplicationController
   
   def edit
     @student = Student.find(params[:id])
+    @cohorts = Cohort.all
   end
 
   def update

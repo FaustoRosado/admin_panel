@@ -14,6 +14,9 @@ class CohortsController < ApplicationController
 
   def new
     @cohort = Cohort.new
+    @courses = Course.all
+    @teachers = Teacher.all
+
   end
 
   def create
@@ -23,6 +26,8 @@ class CohortsController < ApplicationController
 
   def edit
     @cohort = Cohort.find(params[:id])
+    @courses = Course.all
+    @teachers = Teacher.all
   end
 
   def update

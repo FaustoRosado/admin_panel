@@ -3,7 +3,8 @@ class TeachersController < ApplicationController
 
   
   def index
-    @teacher = Teacher.all
+    @teachers = Teacher.all
+    @cohorts = Cohort.all
   end
 
   

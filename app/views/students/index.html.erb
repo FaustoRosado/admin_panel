@@ -19,7 +19,12 @@
     <td><%=student.id%></td>
     <td><a href="students/<%=student.id%>"><%=student.first_name%> <%=student.last_name%></a></td>
     <td><%=student.age%></td>
+    
+    <% if student.cohort_id.nil?%>
+    <td>N/A</td>
+    <%else%>
     <td><a href="/cohorts/<%= @cohorts.find(student.cohort_id).id%>"> <%= @cohorts.find(student.cohort_id).name%></a></td>
+    <%end%>
    
     <td>
    <div class="edit-section">

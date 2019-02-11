@@ -3,6 +3,7 @@ class StudentsController < ApplicationController
   
   def index
     @students = Student.all
+    @students = Student.order("id ASC")
     @cohorts = Cohort.all
   end
 

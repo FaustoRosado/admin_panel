@@ -19,6 +19,7 @@ class StudentsController < ApplicationController
   
   def create
     @student = Student.create(student_params)
+    redirect_to :controller => 'students', :action => 'index'
   end
 
   
@@ -29,11 +30,13 @@ class StudentsController < ApplicationController
   def update
     @student = Student.find(params[:id])
     @student.update(student_params)
+    redirect_to :controller => 'students', :action => 'index'
   end
 
   def destroy
     @student = Student.find(params[:id])
     @student.destroy
+    redirect_to :controller => 'students', :action => 'index'
 end
 
 end

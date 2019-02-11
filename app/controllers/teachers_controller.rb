@@ -20,7 +20,7 @@ class TeachersController < ApplicationController
   
   def create
     @teacher = Teacher.create(teacher_params)
-    redirect_to show_teacher_path
+    redirect_to :controller => 'teachers', :action => 'index'
 
   end
 
@@ -32,11 +32,13 @@ class TeachersController < ApplicationController
   def update
   @teacher = Teacher.find(params[:id])
   @teacher.update(teacher_params)
+  redirect_to :controller => 'teachers', :action => 'index'
   end
 
   def destroy
     @teacher = Teacher.find(params[:id])
     @teacher.destroy
+    redirect_to :controller => 'teachers', :action => 'index'
 end
 
 

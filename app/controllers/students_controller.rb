@@ -33,7 +33,7 @@ class StudentsController < ApplicationController
   def update
     @student = Student.find(params[:id])
     @student.update(student_params)
-    redirect_to :controller => 'students', :action => 'index'
+    redirect_to :controller => 'students', :action => 'show'
   end
 
   def destroy

@@ -18,9 +18,8 @@
     </div>
 
     <div class="teacher-info">
-    <div><h3><%=teacher.fname%> <%=teacher.lname%></h3></div>  
-    <div>myemail@gmail.com</div>
-    <div>917-888-8888</div>
+    <div><h3><%=teacher.first_name%> <%=teacher.last_name%></h3></div>  
+    
     <div><%=teacher.email%></div>
     <div><%=number_to_phone(teacher.phone_number)%></div>
      <div class="read-div"><a class="teacher-read-more"href="/teachers/<%=teacher.id%>">Read More</a></div>

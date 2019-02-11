@@ -29,8 +29,8 @@
     <%current_teacher = @teachers.find(cohort.teacher_id)%>
     <td class="instructor-table"><a href="/teachers/<%=current_teacher.id%>"><%=current_teacher.first_name%> <%=current_teacher.last_name%></a></td>
     <% end %>
-    <td class="course-table"><a href="/courses/<%=current_course.id%>"><%=current_course.name%></a></td>
-    <td><%=current_course.name%></td>
+    <td class="course-table"><a href="/courses/<%=cohort.course.id%>"><%=cohort.course.name%></a></td>
+    <td><%=cohort.course.name%></td>
     <td class="edit-row">
    <div><a href="/cohorts/<%=cohort.id%>/edit"><i id="edit-icon"class="fas fa-pencil-alt"></i></a></div>
    <div class="trash-div"><%= link_to image_tag('trash-alt-regular.svg',:class => 'delete-btn'),cohort_path(cohort), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></div>

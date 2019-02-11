@@ -13,15 +13,19 @@
 <% @courses.each do |course|%>
     <div class="course-div">
     <div class="course-img-div"><a href="/courses/<%=course.id%>"><img src="<%=course.img_url%>"></a></div>
-    
+
     <div class="course-main-about">
     <div class="course-heading"><h3><%=course.name%></h3></div>
     <div><p>Hours: <%=course.hours%></p></div>
     <div class="read-div"><a class="read-more" href="/courses/<%=course.id%>">Read More</a></div>
-   
+   </div>
+
+   </div>
 <% end %>
 
 </div>
+</div>
+
 </div>
 
 </div>

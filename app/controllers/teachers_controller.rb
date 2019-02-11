@@ -41,6 +41,6 @@ end
   private
     
     def teacher_params
-      params.require(:teacher).permit(:first_name, :last_name, :age, :salary, :education, :email, :phone_number, :img_url)
+      params.require(:teacher).permit(:first_name,:last_name,:age,:salary,:education,:email,:phone_number,:img_url)
     end
 

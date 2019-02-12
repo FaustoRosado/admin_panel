@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo administrator login:
 
-Things you may want to cover:
+Email: admin@nycda.com
+Password: 123456
 
-* Ruby version
+or create new administrator at
+https://pacific-tundra-86232.herokuapp.com/admins/sign_up
 
-* System dependencies
+A fullstack simple administrative panel for a fictitious school whereby an administrator can complete common administrative tasks like create cohorts from courses and assign students and teachers to them.
 
-* Configuration
+Key features:
 
-* Database creation
+Built with Ruby on Rails;
+Activerecord is used to make all database transactions;
+All CSS styling; no CSS frameworks implemented
+User authentification implemented with devise gem.
 
-* Database initialization
+Four manageable groups:
 
-* How to run the test suite
+Courses
+Cohorts
+Instructors
+Students
 
-* Services (job queues, cache servers, search engines, etc.)
+The administrator is able to create, read, update, and delete any item in any group.
 
-* Deployment instructions
-
-* ...

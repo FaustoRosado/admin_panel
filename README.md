@@ -1,5 +1,7 @@
 # README
 
+Deployed to Heroku: https://pacific-tundra-86232.herokuapp.com
+
 Demo administrator login:
 
 Email: admin@nycda.com
